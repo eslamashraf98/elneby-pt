@@ -5,13 +5,37 @@ navMenu.addEventListener("click", () => {
 });
 
 
+var sections = $("section"),
+	nav = $("nav"),
+	nav_height = nav.outerHeight();
+$(window).on("scroll", function () {
+	var cur_pos = $(this).scrollTop();
 
-// var nav = document.querySelector(".navbar");
-// var x = window.matchMedia("(min-width: 767px;)")
-// myFunction(x) // Call listener function at run time
-// x.addListener(myFunction) 
+	sections.each(function () {
+		var top = $(this).offset().top - nav_height,
+			bottom = top + $(this).outerHeight();
 
-// function myFunction(x){
-//   if (x.matches) {
-//     nav.style.display = "none";
-// }};
+		if (cur_pos >= top && cur_pos <= bottom) {
+			nav.find("a").removeClass("active");
+			sections.removeClass("active");
+
+			$(this).addClass("active");
+			nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");
+		}
+	});
+});
+nav.find("a").on("click", function () {
+	var $el = $(this),
+		id = $el.attr("href");
+
+	$("html, body").animate(
+		{
+			scrollTop: $(id).offset().top,
+		},
+		1500,
+	);
+
+	return false;
+});
+
+

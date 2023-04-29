@@ -40,6 +40,7 @@ header{
 }
 #logo a:hover{
     color: #062c4d;
+    transition: .5s all;
 }
 header ul{
     display: flex;
@@ -60,6 +61,7 @@ header ul{
 }
 .nav-item a:hover{
     color: #164269;
+    transition: .5s all;
 }
 .active{
     color: #164269 !important;
@@ -67,14 +69,16 @@ header ul{
 }
 .active:hover{
     background-color: #1f548300 !important;
+    transition: .5s all;
 }
 .nav-link{
     text-decoration: none;
-    margin: 20px;
+    margin: 15px;
     background-color: #16426900 !important;
 }
 .nav-link:hover{
     background-color: #1f548300 !important;
+    transition: .5s all;
 }
 .search{
     display: flex !important;
@@ -98,6 +102,7 @@ header ul{
 }
 #navMenu:hover{
     background-color: rgba(255, 255, 255, 0);
+    transition: .5s all;
 }
 .navbar{
     background-color: rgba(0, 255, 255, 0) !important;
@@ -152,7 +157,7 @@ header ul{
     margin-top: 80px !important;
 }
 .carousel-inner{
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.007);
 }
 .carousel-inner img{
     width: 100% !important;
@@ -180,10 +185,11 @@ header ul{
 }
 .carousel-control-next:hover{
     background-color: rgba(0, 177, 138, 0.603) !important;
+    transition: .5s all;
 }
 .carousel-control-prev:hover {
     background-color: rgba(0, 177, 138, 0.603) !important;
-
+    transition: .5s all;
 }
 #cards{
     display: flex;
@@ -224,11 +230,6 @@ header ul{
     font-weight: 500;
     margin-bottom: 50px !important;
 }
-#lorem{
-    width: 95%;
-    margin: auto;
-    text-align: justify;
-}
 #article1{
     width: 50%;
     height: 600px;
@@ -250,6 +251,28 @@ header ul{
     margin-top: -600px;
     margin-right: 100px;
     float: right;
+}
+#article2{
+    background: url(https://metrotownphysio.com/wp-content/uploads/2020/02/clinical-pilates-physiotherapy.jpg);
+    background-size: 97%;
+    background-repeat: repeat;
+}
+#lorem{
+    width: 97%;
+    margin: auto;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.btn1{
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px !important;
+    margin: -150px 0px 150px 100px !important;
+    background-color: aqua !important;
+    border-radius: 20px !important;
+    border-color: #76c293;
 }
 @media (max-width: 320px){
 
@@ -322,7 +345,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 600px;
+            height: 480px;
             margin-left: 30px;
         }
     
@@ -350,6 +373,10 @@ header ul{
         #article1-img img{
             width: 250px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 200px !important;
+}
 }
 @media (min-width: 321px) and (max-width: 360px){
     #navMenu{
@@ -390,7 +417,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 750px;
+            height: 450px;
             margin-left: 30px;
         }
     
@@ -418,6 +445,10 @@ header ul{
         #article1-img img{
             width: 280px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 400px !important;
+}
 }
 @media (min-width: 361px) and (max-width: 375px){
     #logo{
@@ -448,7 +479,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 750px;
+            height: 445px;
             margin-left: 30px;
         }
     
@@ -476,6 +507,10 @@ header ul{
         #article1-img img{
             width: 280px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 400px !important;
+}
 }
 @media (min-width: 376px) and (max-width: 390px){
     #logo{
@@ -506,7 +541,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 800px;
+            height: 460px;
             margin-left: 30px;
         }
     
@@ -534,6 +569,10 @@ header ul{
         #article1-img img{
             width: 285px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 450px !important;
+}
 }
 @media (min-width: 391px) and (max-width: 415px){
        #logo{
@@ -564,7 +603,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 800px;
+            height: 450px;
             margin-left: 30px;
         }
     
@@ -592,6 +631,10 @@ header ul{
         #article1-img img{
             width: 300px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 450px !important;
+}
 }
 @media (min-width: 416px) and (max-width: 480px) {
     #logo {
@@ -665,7 +708,7 @@ header ul{
     #article1 {
         margin-top: -35px;
         width: 80%;
-        height: 900px;
+        height: 460px;
         margin-left: 30px;
     }
 
@@ -686,14 +729,18 @@ header ul{
 
     #article1-img {
         height: 150px;
-        margin-top: -550px;
+        margin-top: -400px;
         margin-bottom: 200px;
-        margin-right: 50px;
+        margin-right: 35px;
     }
 
     #article1-img img {
-        width: 380px;
+        width: 340px;
     }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 450px !important;
+}
 }
 @media (min-width: 481px) and (max-width: 550px){
     #logo {
@@ -766,7 +813,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 900px;
+            height: 450px;
             margin-left: 30px;
         }
     
@@ -794,6 +841,10 @@ header ul{
         #article1-img img{
             width: 380px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 580px !important;
+}
 }
 @media (min-width: 551px) and (max-width: 695px){
     #logo{
@@ -835,7 +886,7 @@ header ul{
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 900px;
+            height: 400px;
             margin-left: 30px;
         }
     
@@ -863,12 +914,24 @@ header ul{
         #article1-img img{
             width: 380px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 590px !important;
+}
+}
+@media (min-width: 605px) and (max-width: 695px){
+        #article1-img {
+                height: 150px;
+                margin-top: 50px;
+                margin-bottom: 200px;
+                margin-right: 50px;
+            }
 }
 @media (min-width: 695px) and (max-width: 780px){
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 1000px;
+            height: 450px;
             margin-left: 30px;
         }
     
@@ -888,19 +951,23 @@ header ul{
         }
     
         #article1-img {
-            margin-top: -600px;
+            margin-top: 100px;
             margin-bottom: 200px;
             margin-right: 50px;
         }
         #article1-img img{
             width: 450px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 1580px !important;
+}
 }
 @media (min-width: 781px) and (max-width: 950px){
         #article1 {
             margin-top: -35px;
             width: 80%;
-            height: 1000px;
+            height: 480px;
             margin-left: 30px;
         }
     
@@ -920,18 +987,22 @@ header ul{
         }
     
         #article1-img {
-            margin-top: -580px;
+            margin-top: 50px;
             margin-bottom: 200px;
             margin-right: 50px;
         }
         #article1-img img{
             width: 500px;
         }
+.btn1 {
+    margin-left: 25px !important;
+    margin-bottom: 1580px !important;
+}
 }
 @media (min-width: 951px) and (max-width: 1290px){
 #article1 {
         width: 48%;
-        height: 600px;
+        height: 500px;
         margin-left: 45px;
     }
 
@@ -958,6 +1029,10 @@ header ul{
     #article1-img img{
         width: 400px;
     }
+.btn1 {
+    margin-left: 45px !important;
+    margin-bottom: 100px !important;
+}
 }
 @media (max-width: 767px){
     header{
@@ -997,6 +1072,7 @@ header ul{
 
 #navMenu:hover {
     background-color: rgba(255, 255, 255, 0);
+        transition: .5s all;
 }
 
 .navbar {
@@ -1024,7 +1100,7 @@ header ul{
 .navbar-collapse {
     background-color: aliceblue;
     width: 100vw !important;
-    height: 385px;
+    height: auto;
 }
 #second{
     display: none !important;
