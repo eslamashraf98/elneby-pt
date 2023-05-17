@@ -253,9 +253,12 @@ header ul{
     float: right;
 }
 #article2{
-    background: url(https://metrotownphysio.com/wp-content/uploads/2020/02/clinical-pilates-physiotherapy.jpg);
-    background-size: 97%;
-    background-repeat: repeat;
+    background: url(pngegg.png);
+    background-size: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: hwb(172 0% 74% / 0.877);
 }
 #lorem{
     width: 97%;
@@ -1100,7 +1103,7 @@ header ul{
 .navbar-collapse {
     background-color: aliceblue;
     width: 100vw !important;
-    height: auto;
+    height: 370px;
 }
 #second{
     display: none !important;
