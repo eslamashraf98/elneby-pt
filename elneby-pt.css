@@ -253,12 +253,21 @@ header ul{
     float: right;
 }
 #article2{
-    background: url(pngegg.png);
-    background-size: 50%;
+    background: url(https://www.shelteringarms.com/wp-content/uploads/2019/10/types-of-therapy.jpg);
+    background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
     background-blend-mode: darken;
-    background-color: hwb(172 0% 74% / 0.877);
+    background-color: hwb(170 0% 79% / 0.842);
+}
+.choose-content {
+    position: relative;
+    border: 1px solid #c9c9c9;
+    -webkit-transition: .6s;
+    transition: .6s;
+    padding: 15px;
+    margin: 30px;
+    z-index: 1;
 }
 #lorem{
     width: 97%;
@@ -277,6 +286,7 @@ header ul{
     border-radius: 20px !important;
     border-color: #76c293;
 }
+
 @media (max-width: 320px){
 
     #navMenu{
