@@ -260,23 +260,43 @@ header ul{
     background-blend-mode: darken;
     background-color: hwb(170 0% 79% / 0.842);
 }
+  .fa-solid {
+      -webkit-transition: .8s ease-out;
+      -moz-transition: .8s ease-out;
+      transition: .8s ease-out;
+  }
 .choose-content {
     position: relative;
-    border: 1px solid #c9c9c9;
+    border: 1.5px solid #c9c9c9;
     -webkit-transition: .6s;
     transition: .6s;
-    padding: 15px;
+    padding: 10px;
     margin: 30px;
     z-index: 1;
+    border-radius: 15px;
+
+
+    &:hover{
+      .fa-solid{
+                transform: rotateY(360deg);
+            }
+    }
+
 }
-#lorem{
+   
+.choose-content:hover{
+background-color: #008d6a;
+transition: .8;
+border-color: #ffffff;
+}
+/* #lorem{
     width: 97%;
     margin: auto;
     text-align: justify;
     font-weight: 600;
     font-size: 15px;
     color: rgb(0, 0, 0);
-}
+} */
 .btn1{
     width: 150px;
     height: 50px;
