@@ -38,4 +38,6 @@ nav.find("a").on("click", function () {
 	return false;
 });
 
-
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+    })

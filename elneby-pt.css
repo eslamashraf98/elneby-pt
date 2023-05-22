@@ -259,6 +259,8 @@ header ul{
     background-repeat: no-repeat;
     background-blend-mode: darken;
     background-color: hwb(170 0% 79% / 0.842);
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
   .fa-solid {
       -webkit-transition: .8s ease-out;
@@ -306,7 +308,17 @@ border-color: #ffffff;
     border-radius: 20px !important;
     border-color: #76c293;
 }
+@media (min-width: 992px){
 
+#p2{
+    margin-top: 35px;
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+}
+
+}
 @media (max-width: 320px){
 
     #navMenu{
@@ -482,6 +494,14 @@ border-color: #ffffff;
     margin-left: 25px !important;
     margin-bottom: 400px !important;
 }
+/* .title{
+    display: block !important;
+    font-weight: 900;
+}
+.fa-solid{
+    font-size: 40px !important;
+    text-align: center;
+} */
 }
 @media (min-width: 361px) and (max-width: 375px){
     #logo{
