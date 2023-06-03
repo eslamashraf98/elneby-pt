@@ -371,6 +371,313 @@ border-color: #ffffff;
     border-radius: 10px !important;
 }
 
+
+/* what we offer start */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.clear {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+    border: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #e73700;
+}
+
+h2 {
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+button {
+    outline: none !important;
+}
+
+/******* Common Element CSS End *********/
+
+/* -------- title style ------- */
+.line-title {
+    position: relative;
+    width: 400px;
+}
+
+.line-title::before,
+.line-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.line-title::before {
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.line-title::after {
+    width: 32px;
+    background: #e73700;
+}
+
+/******* Middle section CSS Start ******/
+/* -------- Landing page ------- */
+.game-section {
+    margin-top: 50px;
+    padding-left: 23px !important;
+}
+
+.game-section .item {
+    margin: 0 15px 60px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    background: #343434 no-repeat center center / cover;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    cursor: pointer;
+        box-shadow: 8px 20px 20px rgba(0, 0, 0, 0.178);
+            -webkit-box-shadow: 8px 20px 20px rgba(0, 0, 0, 0.404);
+}
+
+.game-section .item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item-desc {
+    padding: 0 24px 12px;
+    margin-top: 120px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform: translateY(calc(100% - 54px));
+    -webkit-transform: translateY(calc(100% - 54px));
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+
+/******** Middle section CSS End *******/
+
+/***** responsive css Start ******/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* -------- Landing page ------- */
+    .game-section {
+        padding: 0px 30px;
+    }
+
+    .game-section .item {
+        margin: 0 12px 60px;
+        width: 400px;
+        height: 360px;
+    }
+
+    .game-section .item-desc {
+        margin-top: 25px !important;
+        transform: translateY(calc(100% - 46px));
+        -webkit-transform: translateY(calc(100% - 46px));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .line-title {
+        width: 330px;
+    }
+
+    /* -------- Landing page ------- */
+    .game-section {
+        padding: 50px 30px 40px 100px !important;
+    }
+
+    .game-section .item {
+        margin: 0 12px 60px;
+        width: 450px;
+        height: 480px;
+    }
+
+    .game-section .item.active {
+        width: 450px;
+    }
+
+    .game-section .item-desc {
+        margin-top: 150px !important;
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+}
+
+@media (min-width: 767px) and (max-width: 450px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        margin: 0px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .line-title {
+        width: 250px;
+    }
+
+    /* -------- Landing page ------- */
+    .game-section {
+        padding: 30px 15px 20px 65px !important;
+    }
+
+    .game-section .item {
+        margin: 0 10px 40px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .game-section .item.active {
+        width: 350px;
+        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    }
+    .game-section .item-desc {
+        padding: 0 14px 5px;
+        margin-top: 25px !important;
+        transform: translateY(calc(100% - 42px));
+        -webkit-transform: translateY(calc(100% - 42px));
+    }
+        .diabetes {
+            font-size: 21px !important;
+        }
+}
+
+@media (max-width: 449px){
+    body {
+            font-size: 14px;
+        }
+    
+        h2 {
+            margin-bottom: 20px;
+        }
+    
+        h3 {
+            margin: 0px;
+            font-size: 16px !important;
+            line-height: 24px;
+            font-weight: 800;
+        }
+        .p{
+            font-size: 12px !important;
+        }
+    
+        .line-title {
+            width: 250px;
+        }
+    
+        /* -------- Landing page ------- */
+        .game-section {
+            padding: 30px 15px 20px 35px !important;
+        }
+    
+        .game-section .item {
+            margin: 0 10px 40px;
+            width: 250px;
+            height: 280px;
+        }
+    
+        .game-section .item.active {
+            width: 250px;
+            box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+        }
+    
+        .game-section .item-desc {
+            padding: 0 14px 5px;
+            margin-top: -40px !important;
+            transform: translateY(calc(100% - 42px));
+            -webkit-transform: translateY(calc(100% - 42px));
+        }
+                .diabetes {
+                    font-size: 15px !important;
+                }
+}
+/* what we offer end */
+
+
 @media (max-width: 320px){
 
     #navMenu{
