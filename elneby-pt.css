@@ -284,7 +284,9 @@ header ul{
     }
 
 }
-   
+.row{
+    margin: 0px !important;
+}
 .choose-content:hover{
 background-color: #008d6a;
 transition: .8;
@@ -313,64 +315,6 @@ border-color: #ffffff;
     margin-top: 35px;
 }
 }
-
-.multi-item-carousel {
-    .carousel-inner {
-        > .item {
-            transition: 500ms ease-in-out left;
-        }
-
-        .active {
-            &.left {
-                left: -33%;
-            }
-
-            &.right {
-                left: 33%;
-            }
-        }
-
-        .next {
-            left: 33%;
-        }
-
-        .prev {
-            left: -33%;
-        }
-
-        @media all and (transform-3d),
-        (-webkit-transform-3d) {
-            > .item {
-                // use your favourite prefixer here
-                transition: 500ms ease-in-out left;
-                transition: 500ms ease-in-out all;
-                backface-visibility: visible;
-                transform: none !important;
-            }
-        }
-    }
-
-    .carouse-control {
-
-        &.left,
-        &.right {
-            background-image: none;
-        }
-    }
-}
-
-.col-xs-4{
-    float: none !important;
-    margin: auto !important;
-}
-
-.image2{
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    border-radius: 10px !important;
-}
-
 
 /* what we offer start */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
@@ -461,9 +405,12 @@ button {
 /* -------- Landing page ------- */
 .game-section {
     margin-top: 50px;
-    padding-left: 23px !important;
+    padding-left: 0px !important;
 }
-
+.game-section .owl-theme {
+    margin: auto !important;
+    text-align: center !important;
+}
 .game-section .item {
     margin: 0 15px 60px;
     width: 500px;
@@ -479,7 +426,6 @@ button {
     position: relative;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
-    cursor: pointer;
         box-shadow: 8px 20px 20px rgba(0, 0, 0, 0.178);
             -webkit-box-shadow: 8px 20px 20px rgba(0, 0, 0, 0.404);
 }
@@ -497,9 +443,10 @@ button {
 
 .game-section .item-desc {
     padding: 0 24px 12px;
-    margin-top: 120px;
+    margin-top: 220px;
     color: #fff;
     position: relative;
+    text-align: start !important;
     z-index: 1;
     overflow: hidden;
     transform: translateY(calc(100% - 54px));
@@ -514,9 +461,6 @@ button {
 /***** responsive css Start ******/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    h2 {
-        margin-bottom: 32px;
-    }
 
     h3 {
         margin: 0 0 8px;
@@ -526,17 +470,21 @@ button {
 
     /* -------- Landing page ------- */
     .game-section {
-        padding: 0px 30px;
+        padding: 0px !important;
+        margin: auto !important;
     }
-
+        .game-section .owl-theme {
+            margin: auto !important;
+            text-align: center !important;
+        }
     .game-section .item {
-        margin: 0 12px 60px;
         width: 400px;
-        height: 360px;
+        height: 380px;
     }
 
     .game-section .item-desc {
-        margin-top: 25px !important;
+        margin-top: 180px !important;
+        text-align: start !important;
         transform: translateY(calc(100% - 46px));
         -webkit-transform: translateY(calc(100% - 46px));
     }
@@ -549,7 +497,7 @@ button {
 
     h3 {
         margin: 0 0 8px;
-        font-size: 24px;
+        font-size: 33px !important;
         line-height: 32px;
     }
 
@@ -559,81 +507,96 @@ button {
 
     /* -------- Landing page ------- */
     .game-section {
-        padding: 50px 30px 40px 100px !important;
+        padding: 0px !important;
+        margin: auto !important;
     }
+        .game-section .owl-theme {
+            margin-top: 250px !important;
+            margin: auto !important;
+            text-align: center !important;
+        }
 
     .game-section .item {
         margin: 0 12px 60px;
-        width: 450px;
-        height: 480px;
+        width: 600px;
+        height: 550px;
     }
 
     .game-section .item.active {
-        width: 450px;
+        width: 600px;
     }
 
     .game-section .item-desc {
-        margin-top: 150px !important;
+        margin-top: 300px !important;
         transform: translateY(calc(100% - 42px));
         -webkit-transform: translateY(calc(100% - 42px));
     }
+        .game-section .item-desc p {
+            font-size: 20px !important;
+        }
+
+        #p2 {
+            margin-top: 0px;
+            margin-bottom: 35px !important;
+            font-size: 25px !important;
+        }
 }
 
-@media (min-width: 767px) and (max-width: 450px) {
-    body {
-        font-size: 14px;
-    }
+@media (min-width: 450px) and (max-width: 767px) {
 
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    h3 {
+        h2 {
+            font-size: 50px !important;
+            margin-bottom: 32px;
+            }
+        h3 {
         margin: 0px;
-        font-size: 19px;
+        font-size: 25px !important;
         line-height: 24px;
     }
-
-    .line-title {
-        width: 250px;
+        .game-section {
+        padding: 0px !important;
+        margin: auto !important;
     }
-
-    /* -------- Landing page ------- */
-    .game-section {
-        padding: 30px 15px 20px 65px !important;
-    }
-
+        .game-section .owl-theme {
+            width: 100% !important;
+            margin: auto !important;
+            text-align: center !important;
+        }
     .game-section .item {
-        margin: 0 10px 40px;
-        width: 350px;
-        height: 350px;
+        margin: 0 12px 60px;
+        width: 450px !important;
+        height: 430px;
     }
 
     .game-section .item.active {
-        width: 350px;
+        width: 450px !important;
         box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
         -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     }
     .game-section .item-desc {
-        padding: 0 14px 5px;
-        margin-top: 25px !important;
+        margin-top: 2px !important;
         transform: translateY(calc(100% - 42px));
         -webkit-transform: translateY(calc(100% - 42px));
     }
         .diabetes {
             font-size: 21px !important;
         }
+        .game-section .item-desc p {
+            font-size: 18px !important;
+        }
+        #p2 {
+            margin-top: 0px;
+            margin-bottom: 35px !important;
+            font-size: 25px !important;
+        }
 }
 
 @media (max-width: 449px){
-    body {
-            font-size: 14px;
-        }
-    
+
         h2 {
             margin-bottom: 20px;
         }
-    
+
         h3 {
             margin: 0px;
             font-size: 16px !important;
@@ -648,26 +611,31 @@ button {
             width: 250px;
         }
     
-        /* -------- Landing page ------- */
         .game-section {
-            padding: 30px 15px 20px 35px !important;
+           padding: 0px !important;
+           margin: auto !important;
+       }
+        .game-section .owl-theme {
+            width: 100% !important;
+            margin: auto !important;
+            text-align: center !important;
         }
     
         .game-section .item {
             margin: 0 10px 40px;
-            width: 250px;
-            height: 280px;
+            width: 300px;
+            height: 330px;
         }
     
         .game-section .item.active {
-            width: 250px;
+            width: 300px;
             box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
             -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
         }
     
         .game-section .item-desc {
             padding: 0 14px 5px;
-            margin-top: -40px !important;
+            margin-top: 160px !important;
             transform: translateY(calc(100% - 42px));
             -webkit-transform: translateY(calc(100% - 42px));
         }
@@ -1372,7 +1340,7 @@ button {
         }
 .btn1 {
     margin-left: 25px !important;
-    margin-bottom: 1580px !important;
+    margin-bottom: 750px !important;
 }
 }
 @media (min-width: 781px) and (max-width: 950px){
