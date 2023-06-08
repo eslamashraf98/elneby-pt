@@ -4,7 +4,6 @@ navMenu.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
-
 var sections = $("section"),
 	nav = $("nav"),
 	nav_height = nav.outerHeight();
@@ -38,7 +37,9 @@ nav.find("a").on("click", function () {
 	return false;
 });
 
-
+$('.navbar-collapse a').click(function() {
+ $(".navbar-collapse").collapse('hide');
+});
 
 // Instantiate the Bootstrap carousel
 $('.multi-item-carousel').carousel({
