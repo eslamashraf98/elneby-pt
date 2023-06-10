@@ -5,7 +5,6 @@
 body{
     width: 100vw;
     height: 100vh;
-
 }
 header{
     width: 100% !important;
@@ -292,14 +291,7 @@ background-color: #008d6a;
 transition: .8;
 border-color: #ffffff;
 }
-/* #lorem{
-    width: 97%;
-    margin: auto;
-    text-align: justify;
-    font-weight: 600;
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-} */
+
 .btn1{
     width: 150px;
     height: 50px;
@@ -317,8 +309,6 @@ border-color: #ffffff;
 }
 
 /* what we offer start */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 .clear {
     clear: both;
 }
@@ -768,7 +758,6 @@ button {
     background-color: #007056c0;
 }
 
-
 .bg-img {
     /* The image used */
     background-image: url("https://images.squarespace-cdn.com/content/v1/5c43d0671aef1d5ded93c432/f4a94a7f-7f20-49ff-ac3c-3bbe98ea9c35/image6.jpeg?format=1500w");
@@ -778,7 +767,6 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
 }
 
 /* Add styles to the form container */
@@ -813,8 +801,6 @@ button {
         max-width: 95% ;
     }
 }
-
-
 
 /* Full-width input fields */
 input[type=text],
@@ -855,7 +841,7 @@ input[type=tel]:focus {
     #logo{
         margin-left: -45px !important;
     }
-.search {
+    .search {
         width: 100% !important;
         margin-left: 28px !important;
         margin-top: 1px;
@@ -1247,7 +1233,6 @@ input[type=tel]:focus {
     background-color: aliceblue !important;
     color: black;
 }
-
     .card-title {
         font-size: 22px;
         font-weight: 600;
@@ -1837,5 +1822,5 @@ header {
         margin-top: -70px;
         margin-left: 350px;
     }
-
 }
+

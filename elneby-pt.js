@@ -38,7 +38,7 @@ nav.find("a").on("click", function () {
 });
 
 $('.navbar-collapse a').click(function() {
- $(".navbar-collapse").collapse('hide');
+$(".navbar-collapse").collapse('hide');
 });
 
 // Instantiate the Bootstrap carousel
