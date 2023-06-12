@@ -1,7 +1,7 @@
 const navMenu = document.querySelector("#navMenu");
 
 navMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+	navMenu.classList.toggle("active");
 });
 
 var sections = $("section"),
