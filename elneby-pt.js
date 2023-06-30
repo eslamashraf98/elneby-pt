@@ -1,6 +1,7 @@
 const navMenu = document.querySelector("#navMenu");
 
 navMenu.addEventListener("click", () => {
+	
 	navMenu.classList.toggle("active");
 });
 
@@ -35,15 +36,6 @@ nav.find("a").on("click", function () {
 	);
 
 	return false;
-});
-
-$('.navbar-collapse a').click(function() {
-$(".navbar-collapse").collapse('hide');
-});
-
-// Instantiate the Bootstrap carousel
-$('.multi-item-carousel').carousel({
-  interval: false
 });
 
 // for every slide in carousel, copy the next slide's item in the slide.

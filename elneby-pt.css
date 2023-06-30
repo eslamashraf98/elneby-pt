@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
     width: 100vw;
     height: 100vh;
 }
+
 header{
     width: 100% !important;
     height: 90px !important;
@@ -14,10 +16,12 @@ header{
     z-index: 1020 !important;
     box-shadow: 0 0 10px #888;
 }
+
 #logo{
     margin-left: 20px;
     width: 10% !important;
 }
+
 #logo img{
     width: 60px;
     margin-left: 50px;
@@ -281,8 +285,12 @@ header ul{
                 transform: rotateY(360deg);
             }
     }
-
 }
+
+.choose-content p{
+    padding: 8px;
+}
+
 .row{
     margin: 0px !important;
 }
